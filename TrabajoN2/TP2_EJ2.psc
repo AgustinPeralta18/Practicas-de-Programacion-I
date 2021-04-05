@@ -16,7 +16,10 @@ Algoritmo bomba_tipo_sino
 	Escribir "4.La bomba es una bomba de pasta alimenticia";
 	Leer n1;
 	
-	Si n1 = 0 Entonces
+	
+	//Manejo de errores
+	//Instrucciones
+	Si n1 = 0 o n1 > 4 Entonces
 		Escribir "No hay establecido un valor definido para el tipo de bomba";
 	SiNo
 		Si n1 = 1 Entonces
@@ -30,10 +33,6 @@ Algoritmo bomba_tipo_sino
 				Sino 
 					Si n1 = 4 Entonces
 						Escribir "La bomba es una bomba de pasta alimenticia";
-					SiNo
-						Si n1 > 4 Entonces //FinAlgoritmo
-							Escribir "No existe un valor válido para tipo de bomba";
-						FinSi
 					FinSi
 				FinSi
 			FinSi

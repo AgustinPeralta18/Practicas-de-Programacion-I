@@ -10,29 +10,29 @@ Algoritmo calendario_segun
 	Leer n1;
 	
 	Segun n1 Hacer
-		1:
+		Caso 1:
 			Escribir "(Enero) 31 dias";
-		2:
+		Caso 2:
 			Escribir "(Febrero) 28 dias";
-		3:
+		Caso 3:
 			Escribir "(Marzo) 31 dias";
-		4:
+		Caso 4:
 			Escribir "(Abril) 30 dias";
-		5:	
+		Caso 5:	
 			Escribir "(Mayo) 31 dias";
-		6:	
+		Caso 6:	
 			Escribir "(Junio) 30 dias";
-		7:	
+		Caso 7:	
 			Escribir "(Julio) 31 dias";
-		8:	
+		Caso 8:	
 			Escribir "(Agosto) 31 dias";
-		9:	
+		Caso 9:	
 			Escribir "(Septiembre) 30 dias";
-		10:	
+		Caso 10:	
 			Escribir "(Octubre) 31 dias";
-		11:	
+		Caso 11:	
 			Escribir "(Noviembre) 30 dias";
-		12:	
+		Caso 12:	
 			Escribir "(Diciembre) 31 dias";
 			//FinAlgoritmo
 		De Otro Modo:

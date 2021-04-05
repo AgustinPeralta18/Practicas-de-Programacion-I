@@ -10,8 +10,13 @@ Algoritmo conversor_pesos
 	//6. Sali
 	
 	//VARIABLES
-	Definir n1,valor_convertir, respuesta Como Real;
-	
+	Definir n1 Como Real;
+	Definir dolar Como Real;
+	Definir chileno Como Real;
+	Definir libras_esterlinas Como Real;
+	Definir sol_peruano Como Real;
+	Definir yuan como Real;
+	Definir peso_arg Como Real;
 	//INSTRUCCIONES
 	Escribir "Ingrese el tipo de conversion que quiere realizar";
 	Escribir "1.Pesos argentinos a dólar";
@@ -22,37 +27,30 @@ Algoritmo conversor_pesos
 	Escribir "6.Para salir";
 	Leer n1;
 	
-	Escribir "Ingrese el valor que quiere convertir";
-	Leer valor_convertir;
-	
-	Si n1=1 Entonces
-		respuesta = valor_convertir * 0.01092;
-		Escribir "La cantidad ingresada es igual a ", respuesta " USD";
+	Si (n1 < 1 O n1 >=6) Entonces
+		Escribir "La opcion no es correcta, saliendo del programa";
 	SiNo
-		Si n1=2 Entonces
-			respuesta = valor_convertir * 8;
-			Escribir "La cantidad ingresada es igual a ", respuesta " Peso Chileno";
-		SiNo
-			Si n1=3 Entonces
-				respuesta = valor_convertir * 0.0079;
-				Escribir "La cantidad ingresada es igual a ", respuesta " Libras Esterlinas";
-			SiNo
-				Si n1=4 Entonces
-					respuesta = valor_convertir * 0.041;
-					Escribir "La cantidad ingresada es igual a ", respuesta " Soles Peruanos";
-				SiNo
-					Si n1=5 Entonces
-						respuesta = valor_convertir * 0.072;
-						Escribir "La cantidad ingresada es igual a ", respuesta " Yuanes";
-					SiNo
-						Si n1=6 Entonces   //FinAlgoritmo
-							Escribir "Saliendo";
-						FinSi
-					FinSi
-				FinSi
-			FinSi
-		FinSi
-	Fin Si
+		Escribir "Ingrese el valor que quiere convertir";
+		Leer peso_arg;
+		
+		Segun n1 Hacer
+			Caso 1:
+				dolar = peso_arg * 0.011;
+				Escribir "USD", dolar;
+			Caso 2:
+				chileno = peso_arg * 7.89;
+				Escribir "Peso Chileno", chileno;
+			Caso 3:
+				libras_esterlinas = peso_arg * 0.0079;
+				Escribir "Libras esterlinas", libras_esterlinas;
+			Caso 4: 
+				sol_peruano = peso_arg * 0.041;
+				Escribir "Sol Peruano", sol_peruano;
+			Caso 5: 
+				yuan = peso_arg * 0.072;
+				Escribir "Yuan", yuan;
+		Fin Segun
+	FinSi
 	
 	
 	
